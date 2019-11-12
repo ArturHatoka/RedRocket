@@ -1,0 +1,50 @@
+.rating {
+  display: flex;
+  align-items: center; }
+  .rating-stars {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 4px; }
+    .rating-stars input {
+      display: none; }
+    .rating-stars label {
+      padding: 0 5px;
+      cursor: pointer; }
+
+.rating-stars__img {
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/star.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block; }
+
+.rating-stars input:checked ~ label span, .rating-stars input:checked + label span {
+  background-image: url(../img/star-active.svg); }
+
+.rating-num {
+  color: #eabd45;
+  font-size: 18px;
+  font-weight: bold; }
+
+.progress {
+  margin-top: 50px; }
+
+.progress-back {
+  display: flex;
+  width: 1000px;
+  max-width: 100%;
+  padding: 4px;
+  background: #303030; }
+
+.progress-line {
+  display: flex;
+  justify-content: flex-end;
+  background: linear-gradient(to right, #90EE90, #8FBC8F); }
+
+.progress-num {
+  font-size: 24px;
+  color: black;
+  font-weight: bold; }
+  .progress-num:after {
+    content: '%'; }
