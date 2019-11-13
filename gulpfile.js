@@ -93,4 +93,4 @@ gulp.task('watch', function() {
     gulp.watch(['app/scpipts/**/*.js'], gulp.parallel('scripts'));
 });
 gulp.task('default', gulp.parallel('css-min', 'sass', 'scripts', 'browser-sync', 'watch'));
-gulp.task('build', gulp.parallel('clean', 'img', 'sass', 'css-min', 'scripts', 'prebuild'));
+gulp.task('build', gulp.parallel('clean', 'img', 'prebuild'));
